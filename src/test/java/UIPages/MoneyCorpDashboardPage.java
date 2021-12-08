@@ -1,3 +1,4 @@
+//This class contains page objects and reusable methods for Moneycorpdashboard page which will get used in the test scripts.
 package UIPages;
 
 import org.openqa.selenium.WebDriver;
