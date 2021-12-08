@@ -14,6 +14,8 @@ public class UIScenarioTestCase extends BaseClass
 	private MoneyCorpDashboardPage moneyDashPage;
 	
 	@Test
+	//Loading the pages Moneydashboard and Foreignexchnage page and executing the methods sequentially.
+	
 	public void checkArticle()
 	{
 			
