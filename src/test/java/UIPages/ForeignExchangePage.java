@@ -31,13 +31,13 @@ public class ForeignExchangePage extends CustomUtility
 	@FindBy(how = How.XPATH, using = "//input[@value=\"international payments\"]") WebElement InternationalPaymentFilter;
 	@FindBy(how = How.XPATH, using = "//div[@class=\"results-wrapper\"]/div/div[2]/a") List<WebElement> articleLinks;
 	
-	
+	//Verifying the ForeignexchangePage displayed
 	public void isOnForeignExchangePage()
 	{
 		Assert.assertTrue(foreignExchangePage.isDisplayed());
 	}
 	
-	
+	//Searching for the international payment  
 	public void searchForInternationalPayment()
 	{
 		jsClick(SearchButton);
@@ -53,11 +53,13 @@ public class ForeignExchangePage extends CustomUtility
 		}
 	}
 	
+	//Verifying the Filter page verification
 	public void checkForFilteredPage()
 	{
 		Assert.assertTrue(InternationalPaymentFilter.isDisplayed());
 	}
 	
+	//Verify the each article on international paymnet filter
 	public void checkForArticleLink()
 	{
 		String parent=driver.getWindowHandle();
