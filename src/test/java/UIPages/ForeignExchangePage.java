@@ -45,13 +45,11 @@ public class ForeignExchangePage extends CustomUtility
 		SearchBar.sendKeys("international payments");
 		
 		try {
-			Thread.sleep(10000);
-			Robot ro=new Robot();
+						Robot ro=new Robot();
 			ro.keyPress(KeyEvent.VK_ENTER);	
 		} catch (AWTException e) {
 			e.printStackTrace();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+		
 		}
 	}
 	
