@@ -35,7 +35,7 @@ public class MoneyCorpDashboardPage extends CustomUtility
 	
 	public void isLanguageConversionDone()
 	{
-		String currentUrl = driver.getCurrentUrl();
+		String currentUrl =driver.getCurrentUrl();
 		if(currentUrl.contains("en-us"))
 			Assert.assertTrue(true);
 		else
