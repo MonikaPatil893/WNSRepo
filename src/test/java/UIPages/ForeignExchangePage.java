@@ -27,6 +27,8 @@ public class ForeignExchangePage extends CustomUtility
 		this.driver = driver;
 	}
 	
+	//Page factory has been used for Page object identification
+	
 	@FindBy(how = How.XPATH, using = "//h1[text()=\"Foreign exchange solutions for your business\"]") WebElement foreignExchangePage;
 	@FindBy(how = How.XPATH, using = "//button[@class=\"navigation-search icon\"]") WebElement SearchButton;
 	@FindBy(how = How.CSS, using = "#nav_search") WebElement SearchBar;
