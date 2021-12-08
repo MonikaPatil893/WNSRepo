@@ -20,7 +20,7 @@ public class UIScenarioTestCase extends BaseClass
 		loadURL();
 		driver = getDriver();
 		
-		moneyDashPage = PageFactory.initElements(driver, MoneyCorpDashboardPage.class);
+		moneyDashPage =PageFactory.initElements(driver, MoneyCorpDashboardPage.class);
 		moneyDashPage.isOnDashBoardPage();
 		moneyDashPage.changeLanguageAndRegion();
 		moneyDashPage.isLanguageConversionDone();
