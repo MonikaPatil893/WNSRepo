@@ -21,11 +21,13 @@ public class MoneyCorpDashboardPage extends CustomUtility
 	@FindBy(how = How.XPATH, using = "//ul/li/a/span[text()=\"USA\"]") WebElement language;
 	@FindBy(how = How.XPATH, using = "//h3[text()=\"Foreign exchange solutions\"]/following-sibling::a/span") WebElement FindMoreButton;
 	
+	//verifying moneydashboard page is displayed
 	public void isOnDashBoardPage()
 	{
 		Assert.assertEquals(driver.getTitle(),"International Payments & Currency Exchange | moneycorp");
 	}
 	
+	//Changing the language and region page is displayed
 	public void changeLanguageAndRegion()
 	{
 		jsClick(languageArrow);
@@ -42,6 +44,7 @@ public class MoneyCorpDashboardPage extends CustomUtility
 			Assert.assertTrue(false);
 	}
 	
+	//Clicking on Find more option of Foreign exechange page
 	public void findMoreForeignExchangeSolution()
 	{
 		jsClick(FindMoreButton);
