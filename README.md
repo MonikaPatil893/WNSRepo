@@ -9,10 +9,10 @@
 7. GIT version tool setup in your system.(Assumption is that you already have config setup with your git).
 
 # Framework component
-1) Test cases- Test cases can be retrived from path "WNSRepo/src/test/java/TestCases/"
-2) UIPages - Ui Pages can be retrived from path "WNSRepo/src/test/java/UIPages"
-3) Chromwe drier - chrome driver is pasted in "WNSRepo/Drivers/"
-4) TestNg Xml is putted in path "WNSRepo/testng.xml"
+1) Test cases(Test scripts)- Test cases can be retrived from path "WNSRepo/src/test/java/TestCases/"
+2) UIPages(Ui pages contains Page object and reusable methods for the specific page) - Ui Pages can be retrived from path "WNSRepo/src/test/java/UIPages"
+3) Chromwe driver - chrome driver is pasted in "WNSRepo/Drivers/"
+4) TestNg Xml is present at path "WNSRepo/testng.xml"
  
 # For Script execution 
 
