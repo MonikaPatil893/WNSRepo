@@ -14,7 +14,7 @@
 3) Chromwe drier - chrome driver is pasted in "WNSRepo/Drivers/"
 4) TestNg Xml is putted in path "WNSRepo/testng.xml"
  
-# For Eclipse IDE
+# For Script execution 
 
 If you have eclipse IDE setup in your machine then clone the project from remote GIT to your local.
 Follow these steps : 
