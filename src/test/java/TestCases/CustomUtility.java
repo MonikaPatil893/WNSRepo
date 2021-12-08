@@ -7,7 +7,7 @@ public class CustomUtility extends BaseClass {
 	
 	public void jsClick(WebElement element)
 	{
-		JavascriptExecutor executor = (JavascriptExecutor)getDriver();
+		JavascriptExecutor executor =(JavascriptExecutor)getDriver();
 		executor.executeScript("arguments[0].click();", element);
 	}
 
