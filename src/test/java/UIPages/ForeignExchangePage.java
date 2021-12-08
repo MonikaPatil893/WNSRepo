@@ -45,7 +45,7 @@ public class ForeignExchangePage extends CustomUtility
 		SearchBar.sendKeys("international payments");
 		
 		try {
-						Robot ro=new Robot();
+			Robot ro=new Robot();
 			ro.keyPress(KeyEvent.VK_ENTER);	
 		} catch (AWTException e) {
 			e.printStackTrace();
