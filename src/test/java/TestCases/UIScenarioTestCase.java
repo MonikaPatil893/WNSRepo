@@ -22,17 +22,17 @@ public class UIScenarioTestCase extends BaseClass
 		loadURL();
 		driver = getDriver();
 		
-		moneyDashPage =PageFactory.initElements(driver, MoneyCorpDashboardPage.class);
-		moneyDashPage.isOnDashBoardPage();
-		moneyDashPage.changeLanguageAndRegion();
-		moneyDashPage.isLanguageConversionDone();
-		moneyDashPage.findMoreForeignExchangeSolution();
+		moneyDashPage =PageFactory.initElements(driver, MoneyCorpDashboardPage.class);//Instantiating MoneyCorpDashboardPage and passing driver oject to its constructor)
+		moneyDashPage.isOnDashBoardPage();//verifying moneydashboard page is displayed
+		moneyDashPage.changeLanguageAndRegion();//Changing the language and region page is displayed
+		moneyDashPage.isLanguageConversionDone();//Verifying the Languageconversion
+		moneyDashPage.findMoreForeignExchangeSolution();//Clicking on Find more option of Foreign exechange page
 		
-		forExgPage = PageFactory.initElements(driver, ForeignExchangePage.class);
-		forExgPage.isOnForeignExchangePage();
-		forExgPage.searchForInternationalPayment();
-		forExgPage.checkForFilteredPage();
-		forExgPage.checkForArticleLink();
+		forExgPage = PageFactory.initElements(driver, ForeignExchangePage.class);//Instantiating foreignexchangepage and passing driver oject to its constructor)
+		forExgPage.isOnForeignExchangePage();//Verifying the ForeignexchangePage displayed
+		forExgPage.searchForInternationalPayment();//Searching for the international payment  
+		forExgPage.checkForFilteredPage();//Verifying the Filter page verification
+		forExgPage.checkForArticleLink();//Verify the each article on international paymnet filter
 		
 	}
 }
