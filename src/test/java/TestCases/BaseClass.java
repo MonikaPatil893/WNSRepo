@@ -14,15 +14,17 @@ public class BaseClass
 	{
 		return driver;
 	}
+	//Launching the browser and loading the application URL
 	
 	public void loadURL()
 	{
 		ChromeOptions ops = new ChromeOptions();
         ops.addArguments("--disable-notifications");
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");//Setting up Chrome driver
+		
 	    driver =new ChromeDriver(ops);
 	    String url = "https://www.moneycorp.com/en-gb/";
-	    driver.get(url);
+	    driver.get(url); //Launching the browser
 	    driver.manage().window().maximize();
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
@@ -30,6 +32,6 @@ public class BaseClass
 	@AfterTest
 	public void quitDriver()
 	{
-		driver.quit();
+		driver.quit();//Quiting the browser after test case execution
 	}
 }
