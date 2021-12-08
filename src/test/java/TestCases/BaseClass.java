@@ -19,8 +19,8 @@ public class BaseClass
 	{
 		ChromeOptions ops = new ChromeOptions();
         ops.addArguments("--disable-notifications");
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
-	    driver = new ChromeDriver(ops);
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
+	    driver =new ChromeDriver(ops);
 	    String url = "https://www.moneycorp.com/en-gb/";
 	    driver.get(url);
 	    driver.manage().window().maximize();
