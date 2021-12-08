@@ -66,7 +66,7 @@ public class ForeignExchangePage extends CustomUtility
 		
 		try
 		{
-		Actions action = new Actions(driver); 
+		Actions action =new Actions(driver); 
 		
 		for(WebElement articleLink:articleLinks)
 		{
