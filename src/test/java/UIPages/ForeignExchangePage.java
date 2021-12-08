@@ -1,3 +1,5 @@
+
+//This class contains page objects and reusable methods for foreignExchangePage which will get used in the test scripts.
 package UIPages;
 
 import java.awt.AWTException;
